@@ -16,6 +16,10 @@
 		CD10FCAB266C90CC00A84E66 /* EDNLearnMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD10FCA2266C90CB00A84E66 /* EDNLearnMac.framework */; };
 		CD10FCB0266C90CC00A84E66 /* EDNLearnMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD10FCAF266C90CC00A84E66 /* EDNLearnMacTests.swift */; };
 		CD10FCB2266C90CC00A84E66 /* EDNLearnMac.h in Headers */ = {isa = PBXBuildFile; fileRef = CD10FCA4266C90CB00A84E66 /* EDNLearnMac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD163F50266DF38000835B83 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD163F4F266DF38000835B83 /* FeedItem.swift */; };
+		CD163F51266DF38000835B83 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD163F4F266DF38000835B83 /* FeedItem.swift */; };
+		CD163F56266DF3BB00835B83 /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD163F55266DF3BB00835B83 /* FeedLoader.swift */; };
+		CD163F57266DF3BB00835B83 /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD163F55266DF3BB00835B83 /* FeedLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,8 @@
 		CD10FCAA266C90CC00A84E66 /* EDNLearnMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EDNLearnMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD10FCAF266C90CC00A84E66 /* EDNLearnMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDNLearnMacTests.swift; sourceTree = "<group>"; };
 		CD10FCB1266C90CC00A84E66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD163F4F266DF38000835B83 /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
+		CD163F55266DF3BB00835B83 /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,7 @@
 		CD10FC87266C90AA00A84E66 /* EDNLearn */ = {
 			isa = PBXGroup;
 			children = (
+				CD163F4E266DF37100835B83 /* Feed Feature */,
 				CD10FC88266C90AA00A84E66 /* AppDelegate.swift */,
 				CD10FC8A266C90AA00A84E66 /* SceneDelegate.swift */,
 				CD10FC8C266C90AA00A84E66 /* ViewController.swift */,
@@ -121,6 +128,15 @@
 				CD10FCB1266C90CC00A84E66 /* Info.plist */,
 			);
 			path = EDNLearnMacTests;
+			sourceTree = "<group>";
+		};
+		CD163F4E266DF37100835B83 /* Feed Feature */ = {
+			isa = PBXGroup;
+			children = (
+				CD163F4F266DF38000835B83 /* FeedItem.swift */,
+				CD163F55266DF3BB00835B83 /* FeedLoader.swift */,
+			);
+			path = "Feed Feature";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +220,7 @@
 					};
 					CD10FCA1266C90CB00A84E66 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					CD10FCA9266C90CC00A84E66 = {
 						CreatedOnToolsVersion = 12.4;
@@ -262,8 +279,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD163F50266DF38000835B83 /* FeedItem.swift in Sources */,
 				CD10FC8D266C90AA00A84E66 /* ViewController.swift in Sources */,
 				CD10FC89266C90AA00A84E66 /* AppDelegate.swift in Sources */,
+				CD163F56266DF3BB00835B83 /* FeedLoader.swift in Sources */,
 				CD10FC8B266C90AA00A84E66 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +291,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD163F57266DF3BB00835B83 /* FeedLoader.swift in Sources */,
+				CD163F51266DF38000835B83 /* FeedItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +491,7 @@
 		CD10FCB4266C90CC00A84E66 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -490,6 +512,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -499,6 +522,7 @@
 		CD10FCB5266C90CC00A84E66 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -528,6 +552,7 @@
 		CD10FCB7266C90CC00A84E66 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = NT7V746EDB;
@@ -548,6 +573,7 @@
 		CD10FCB8266C90CC00A84E66 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = NT7V746EDB;
