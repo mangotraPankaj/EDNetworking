@@ -20,6 +20,7 @@ public final class RemoteFeedLoader {
         self.client = client
         self.url = url
     }
+   
     public func load() {
         client.get(from: url)
     }
