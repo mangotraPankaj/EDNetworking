@@ -23,6 +23,7 @@
 		CD163F5C266DFD9E00835B83 /* RemoteFeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD163F5B266DFD9E00835B83 /* RemoteFeedLoaderTests.swift */; };
 		CD163F67266F7B4000835B83 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD163F66266F7B4000835B83 /* RemoteFeedLoader.swift */; };
 		CD163F68266F7B4000835B83 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD163F66266F7B4000835B83 /* RemoteFeedLoader.swift */; };
+		CD3223D02674AAD800A90502 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD163F4F266DF38000835B83 /* FeedItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -340,6 +341,7 @@
 			files = (
 				CD163F5C266DFD9E00835B83 /* RemoteFeedLoaderTests.swift in Sources */,
 				CD10FCB0266C90CC00A84E66 /* EDNLearnMacTests.swift in Sources */,
+				CD3223D02674AAD800A90502 /* FeedItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
