@@ -21,6 +21,7 @@ public struct FeedItem: Equatable {
     }
 }
 
+//the below codingKeys enum is used as the json key is image instead of imageURL. If the key in the JSON contract is imageURL we dont need to create the below enum
 extension FeedItem: Decodable {
     private enum CodingKeys: String, CodingKey {
         case id
