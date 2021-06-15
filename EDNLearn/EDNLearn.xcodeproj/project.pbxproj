@@ -136,9 +136,9 @@
 		CD10FCAE266C90CC00A84E66 /* EDNLearnMacTests */ = {
 			isa = PBXGroup;
 			children = (
+				CD4CC90426788C040093103C /* Feed API */,
 				CD10FCAF266C90CC00A84E66 /* EDNLearnMacTests.swift */,
 				CD10FCB1266C90CC00A84E66 /* Info.plist */,
-				CD163F5B266DFD9E00835B83 /* RemoteFeedLoaderTests.swift */,
 			);
 			path = EDNLearnMacTests;
 			sourceTree = "<group>";
@@ -158,6 +158,14 @@
 			children = (
 				CD163F66266F7B4000835B83 /* RemoteFeedLoader.swift */,
 				CD4CC8F226787ADE0093103C /* FeedItemMapper.swift */,
+			);
+			path = "Feed API";
+			sourceTree = "<group>";
+		};
+		CD4CC90426788C040093103C /* Feed API */ = {
+			isa = PBXGroup;
+			children = (
+				CD163F5B266DFD9E00835B83 /* RemoteFeedLoaderTests.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
