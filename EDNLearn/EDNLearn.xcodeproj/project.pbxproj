@@ -23,6 +23,8 @@
 		CD163F5C266DFD9E00835B83 /* RemoteFeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD163F5B266DFD9E00835B83 /* RemoteFeedLoaderTests.swift */; };
 		CD163F67266F7B4000835B83 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD163F66266F7B4000835B83 /* RemoteFeedLoader.swift */; };
 		CD163F68266F7B4000835B83 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD163F66266F7B4000835B83 /* RemoteFeedLoader.swift */; };
+		CD4CC8F326787ADE0093103C /* FeedAPIMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4CC8F226787ADE0093103C /* FeedAPIMapper.swift */; };
+		CD4CC8F426787ADE0093103C /* FeedAPIMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4CC8F226787ADE0093103C /* FeedAPIMapper.swift */; };
 		CDFEFDB8267876F0004BA307 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFEFDB7267876F0004BA307 /* HTTPClient.swift */; };
 		CDFEFDB9267876F0004BA307 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFEFDB7267876F0004BA307 /* HTTPClient.swift */; };
 /* End PBXBuildFile section */
@@ -56,6 +58,7 @@
 		CD163F55266DF3BB00835B83 /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 		CD163F5B266DFD9E00835B83 /* RemoteFeedLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoaderTests.swift; sourceTree = "<group>"; };
 		CD163F66266F7B4000835B83 /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
+		CD4CC8F226787ADE0093103C /* FeedAPIMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAPIMapper.swift; sourceTree = "<group>"; };
 		CDFEFDB7267876F0004BA307 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -154,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				CD163F66266F7B4000835B83 /* RemoteFeedLoader.swift */,
+				CD4CC8F226787ADE0093103C /* FeedAPIMapper.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -320,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD163F50266DF38000835B83 /* FeedItem.swift in Sources */,
+				CD4CC8F326787ADE0093103C /* FeedAPIMapper.swift in Sources */,
 				CD10FC8D266C90AA00A84E66 /* ViewController.swift in Sources */,
 				CD10FC89266C90AA00A84E66 /* AppDelegate.swift in Sources */,
 				CDFEFDB8267876F0004BA307 /* HTTPClient.swift in Sources */,
@@ -334,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD163F57266DF3BB00835B83 /* FeedLoader.swift in Sources */,
+				CD4CC8F426787ADE0093103C /* FeedAPIMapper.swift in Sources */,
 				CD163F68266F7B4000835B83 /* RemoteFeedLoader.swift in Sources */,
 				CDFEFDB9267876F0004BA307 /* HTTPClient.swift in Sources */,
 				CD163F51266DF38000835B83 /* FeedItem.swift in Sources */,
