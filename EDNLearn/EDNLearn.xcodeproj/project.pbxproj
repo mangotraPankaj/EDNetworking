@@ -111,14 +111,9 @@
 		CD10FC87266C90AA00A84E66 /* EDNLearn */ = {
 			isa = PBXGroup;
 			children = (
+				CD4CC90526788C540093103C /* Unused iOS code */,
 				CD163F65266F7AFD00835B83 /* Feed API */,
 				CD163F4E266DF37100835B83 /* Feed Feature */,
-				CD10FC88266C90AA00A84E66 /* AppDelegate.swift */,
-				CD10FC8A266C90AA00A84E66 /* SceneDelegate.swift */,
-				CD10FC8C266C90AA00A84E66 /* ViewController.swift */,
-				CD10FC8E266C90AA00A84E66 /* Main.storyboard */,
-				CD10FC91266C90AF00A84E66 /* Assets.xcassets */,
-				CD10FC93266C90AF00A84E66 /* LaunchScreen.storyboard */,
 				CD10FC96266C90AF00A84E66 /* Info.plist */,
 			);
 			path = EDNLearn;
@@ -148,7 +143,6 @@
 			children = (
 				CD163F4F266DF38000835B83 /* FeedItem.swift */,
 				CD163F55266DF3BB00835B83 /* FeedLoader.swift */,
-				CDFEFDB7267876F0004BA307 /* HTTPClient.swift */,
 			);
 			path = "Feed Feature";
 			sourceTree = "<group>";
@@ -158,6 +152,7 @@
 			children = (
 				CD163F66266F7B4000835B83 /* RemoteFeedLoader.swift */,
 				CD4CC8F226787ADE0093103C /* FeedItemMapper.swift */,
+				CDFEFDB7267876F0004BA307 /* HTTPClient.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -168,6 +163,19 @@
 				CD163F5B266DFD9E00835B83 /* RemoteFeedLoaderTests.swift */,
 			);
 			path = "Feed API";
+			sourceTree = "<group>";
+		};
+		CD4CC90526788C540093103C /* Unused iOS code */ = {
+			isa = PBXGroup;
+			children = (
+				CD10FC93266C90AF00A84E66 /* LaunchScreen.storyboard */,
+				CD10FC88266C90AA00A84E66 /* AppDelegate.swift */,
+				CD10FC8A266C90AA00A84E66 /* SceneDelegate.swift */,
+				CD10FC8C266C90AA00A84E66 /* ViewController.swift */,
+				CD10FC8E266C90AA00A84E66 /* Main.storyboard */,
+				CD10FC91266C90AF00A84E66 /* Assets.xcassets */,
+			);
+			path = "Unused iOS code";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
