@@ -23,6 +23,8 @@
 		CD163F5C266DFD9E00835B83 /* RemoteFeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD163F5B266DFD9E00835B83 /* RemoteFeedLoaderTests.swift */; };
 		CD163F67266F7B4000835B83 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD163F66266F7B4000835B83 /* RemoteFeedLoader.swift */; };
 		CD163F68266F7B4000835B83 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD163F66266F7B4000835B83 /* RemoteFeedLoader.swift */; };
+		CDFEFDB8267876F0004BA307 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFEFDB7267876F0004BA307 /* HTTPClient.swift */; };
+		CDFEFDB9267876F0004BA307 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFEFDB7267876F0004BA307 /* HTTPClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,7 @@
 		CD163F55266DF3BB00835B83 /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 		CD163F5B266DFD9E00835B83 /* RemoteFeedLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoaderTests.swift; sourceTree = "<group>"; };
 		CD163F66266F7B4000835B83 /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
+		CDFEFDB7267876F0004BA307 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +145,7 @@
 			children = (
 				CD163F4F266DF38000835B83 /* FeedItem.swift */,
 				CD163F55266DF3BB00835B83 /* FeedLoader.swift */,
+				CDFEFDB7267876F0004BA307 /* HTTPClient.swift */,
 			);
 			path = "Feed Feature";
 			sourceTree = "<group>";
@@ -318,6 +322,7 @@
 				CD163F50266DF38000835B83 /* FeedItem.swift in Sources */,
 				CD10FC8D266C90AA00A84E66 /* ViewController.swift in Sources */,
 				CD10FC89266C90AA00A84E66 /* AppDelegate.swift in Sources */,
+				CDFEFDB8267876F0004BA307 /* HTTPClient.swift in Sources */,
 				CD163F56266DF3BB00835B83 /* FeedLoader.swift in Sources */,
 				CD163F67266F7B4000835B83 /* RemoteFeedLoader.swift in Sources */,
 				CD10FC8B266C90AA00A84E66 /* SceneDelegate.swift in Sources */,
@@ -330,6 +335,7 @@
 			files = (
 				CD163F57266DF3BB00835B83 /* FeedLoader.swift in Sources */,
 				CD163F68266F7B4000835B83 /* RemoteFeedLoader.swift in Sources */,
+				CDFEFDB9267876F0004BA307 /* HTTPClient.swift in Sources */,
 				CD163F51266DF38000835B83 /* FeedItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
