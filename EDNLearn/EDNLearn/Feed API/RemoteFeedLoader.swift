@@ -19,11 +19,12 @@ public final class RemoteFeedLoader:FeedLoader {
         
     public typealias Result = LoadFeedResult
     //        case success([Feeditem])
-   public init(url: URL, client: HTTPClient) {
+public init(url: URL, client: HTTPClient) {
         self.client = client
         self.url = url
     }
-    public func load(completion: @escaping(Result) -> Void) {
+    
+public func load(completion: @escaping(Result) -> Void) {
         client.get(from: url) {[weak self] result in
             guard self != nil else { return }
             switch result {
@@ -35,8 +36,6 @@ public final class RemoteFeedLoader:FeedLoader {
             }
         }
     }
-    
-   
 }
 
 
