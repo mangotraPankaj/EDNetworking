@@ -63,6 +63,7 @@
 		CD1FF5EA267C92D4008FCA6B /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
 		CD1FF62026806A70008FCA6B /* XCTestCase+MemoryLeakTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracker.swift"; sourceTree = "<group>"; };
 		CD4CC8F226787ADE0093103C /* FeedItemMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemMapper.swift; sourceTree = "<group>"; };
+		CD6906BD26831624001E9E4D /* URLSession.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = URLSession.xctestplan; path = "EDNLearnMacTests/Feed API/URLSession.xctestplan"; sourceTree = SOURCE_ROOT; };
 		CDFEFDB7267876F0004BA307 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -172,6 +173,7 @@
 		CD4CC90426788C040093103C /* Feed API */ = {
 			isa = PBXGroup;
 			children = (
+				CD6906BD26831624001E9E4D /* URLSession.xctestplan */,
 				CD1FF61F26806A50008FCA6B /* Helpers */,
 				CD163F5B266DFD9E00835B83 /* RemoteFeedLoaderTests.swift */,
 				CD1FF5EA267C92D4008FCA6B /* URLSessionHTTPClientTests.swift */,

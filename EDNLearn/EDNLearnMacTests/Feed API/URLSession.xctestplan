@@ -1,0 +1,28 @@
+{
+  "configurations" : [
+    {
+      "id" : "464CCC9F-DFBA-4C8C-94F3-758F16713377",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "skippedTests" : [
+        "EDNLearnMacTests",
+        "RemoteFeedLoaderTests"
+      ],
+      "target" : {
+        "containerPath" : "container:EDNLearn.xcodeproj",
+        "identifier" : "CD10FCA9266C90CC00A84E66",
+        "name" : "EDNLearnMacTests"
+      }
+    }
+  ],
+  "version" : 1
+}
