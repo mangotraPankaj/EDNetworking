@@ -41,7 +41,30 @@ extension URLSessionHTTPClient {
             if let error = error {
                 completion(.failure(error))
             }
-            
         }.resume()
     }
+}
+
+extension URLRequest {
+ public var httpBodyData: Data? {
+    guard let stream = httpBodyStream else { return httpBody }
+    
+    let bufferSize = 1024
+    var data = Data()
+    var buffer = [UInt8](repeating: 0, count: bufferSize)
+    
+    stream.open()
+    
+    while stream.hasBytesAvailable {
+      let length = stream.read(&buffer, maxLength: bufferSize)
+      
+      if length == 0 {
+        break
+      }
+      data.append(&buffer, count: length)
+    }
+    stream.close()
+    
+    return data
+  }
 }

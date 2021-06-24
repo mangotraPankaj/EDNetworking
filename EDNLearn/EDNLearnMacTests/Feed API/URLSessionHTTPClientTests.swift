@@ -44,13 +44,12 @@ class URLSessionHTTPClientTests: XCTestCase {
             
             XCTAssertEqual(request.url, url)
             XCTAssertEqual(request.httpMethod, "POST")
-            XCTAssertNotNil(request.httpBodyStream?.hasBytesAvailable, "bytes available")
-            //XCTAssertEqual(request.httpBodyStream?.read(<#T##buffer: UnsafeMutablePointer<UInt8>##UnsafeMutablePointer<UInt8>#>, maxLength: <#T##Int#>), anyData.count)
+            XCTAssertEqual(request.httpBodyData, anyData)
             
             exp.fulfill()
         }
         makeSUT().post(anyData, to: url) {_ in }
-        //makeSUT().get(from: <#T##URL#>, completion: <#T##(HTTPClientResult) -> Void#>)
+       
         
         wait(for: [exp], timeout: 1.0)
     }

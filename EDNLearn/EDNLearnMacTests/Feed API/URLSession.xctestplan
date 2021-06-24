@@ -14,8 +14,7 @@
   "testTargets" : [
     {
       "skippedTests" : [
-        "EDNLearnMacTests",
-        "RemoteFeedLoaderTests"
+        "EDNLearnMacTests"
       ],
       "target" : {
         "containerPath" : "container:EDNLearn.xcodeproj",
