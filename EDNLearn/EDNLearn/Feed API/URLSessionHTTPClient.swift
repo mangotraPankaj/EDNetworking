@@ -27,11 +27,7 @@ public class URLSessionHTTPClient: HTTPClient {
             }
         }.resume()
     }
-    
-    
-}
 
-extension URLSessionHTTPClient {
     public func post(_ data: Data, to url: URL, completion:@escaping (HTTPClientResult) -> Void) {
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
