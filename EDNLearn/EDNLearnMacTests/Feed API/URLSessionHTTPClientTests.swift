@@ -35,6 +35,28 @@ class URLSessionHTTPClientTests: XCTestCase {
         wait(for: [exp], timeout: 1.0)
     }
     
+    func test_getFromURL_performPOSTRequestWithURL() {
+     
+        let url = URL(string: "http://www.google.com")!
+        let anyData = Data("anyData".utf8)
+        let exp = expectation(description: "Wait for request")
+        URLProtocolStub.observeRequests { request in
+            
+            XCTAssertEqual(request.url, url)
+            XCTAssertEqual(request.httpMethod, "POST")
+            XCTAssertNotNil(request.httpBodyStream?.hasBytesAvailable, "bytes available")
+            //XCTAssertEqual(request.httpBodyStream?.read(<#T##buffer: UnsafeMutablePointer<UInt8>##UnsafeMutablePointer<UInt8>#>, maxLength: <#T##Int#>), anyData.count)
+            
+            exp.fulfill()
+        }
+        makeSUT().post(anyData, to: url) {_ in }
+        //makeSUT().get(from: <#T##URL#>, completion: <#T##(HTTPClientResult) -> Void#>)
+        
+        wait(for: [exp], timeout: 1.0)
+    }
+    
+    
+    
     func test_getFromURL_failsOnRequestError() {
       
         let requestError = anyError()
@@ -81,7 +103,7 @@ class URLSessionHTTPClientTests: XCTestCase {
     
     //MARK: - Helpers
     private func makeSUT(file: StaticString = #filePath,
-                         line: UInt = #line) -> HTTPClient {
+                         line: UInt = #line) -> URLSessionHTTPClient {
         let sut = URLSessionHTTPClient()
         trackForMemoryLeaks(sut, file: file, line: line)
         return sut

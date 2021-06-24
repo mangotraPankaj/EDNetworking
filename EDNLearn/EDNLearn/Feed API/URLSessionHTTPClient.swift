@@ -11,7 +11,7 @@ public class URLSessionHTTPClient: HTTPClient {
     
     private let session: URLSession
     
-    init(session: URLSession = .shared) {
+   public init(session: URLSession = .shared) {
         self.session = session
     }
   private struct UnexpectedValuesRepresentation: Error {}
@@ -25,6 +25,23 @@ public class URLSessionHTTPClient: HTTPClient {
             } else {
                 completion(.failure(UnexpectedValuesRepresentation()))
             }
+        }.resume()
+    }
+    
+    
+}
+
+extension URLSessionHTTPClient {
+    public func post(_ data: Data, to url: URL, completion:@escaping (HTTPClientResult) -> Void) {
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.httpBody = data
+        
+        session.dataTask(with: request) {_,_, error in
+            if let error = error {
+                completion(.failure(error))
+            }
+            
         }.resume()
     }
 }
