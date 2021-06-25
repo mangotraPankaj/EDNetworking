@@ -9,7 +9,12 @@
     }
   ],
   "defaultOptions" : {
-
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:EDNLearn.xcodeproj",
+      "identifier" : "CD10FCA1266C90CB00A84E66",
+      "name" : "EDNLearnMac"
+    },
+    "testExecutionOrdering" : "random"
   },
   "testTargets" : [
     {
