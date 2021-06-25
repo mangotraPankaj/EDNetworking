@@ -33,9 +33,13 @@ public class URLSessionHTTPClient: HTTPClient {
         request.httpMethod = "POST"
         request.httpBody = data
         
-        session.dataTask(with: request) {_,_, error in
+        session.dataTask(with: request) {data, response, error in
             if let error = error {
                 completion(.failure(error))
+            } else if let data = data, let response = response as? HTTPURLResponse {
+                completion(.success(data, response))
+            } else {
+                completion(.failure(UnexpectedValuesRepresentation()))
             }
         }.resume()
     }
@@ -56,8 +60,9 @@ extension URLRequest {
       
       if length == 0 {
         break
-      }
+      } else {
       data.append(&buffer, count: length)
+      }
     }
     stream.close()
     
