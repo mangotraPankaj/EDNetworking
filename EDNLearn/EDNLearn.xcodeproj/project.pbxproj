@@ -29,12 +29,21 @@
 		CD4CC8F426787ADE0093103C /* FeedItemMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4CC8F226787ADE0093103C /* FeedItemMapper.swift */; };
 		CD6906D726845771001E9E4D /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6906D626845771001E9E4D /* URLSessionHTTPClient.swift */; };
 		CD6906D826845771001E9E4D /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6906D626845771001E9E4D /* URLSessionHTTPClient.swift */; };
+		CD6907272685AA9E001E9E4D /* EDNLearnAPIEndToEndTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6907262685AA9E001E9E4D /* EDNLearnAPIEndToEndTests.swift */; };
+		CD6907292685AA9E001E9E4D /* EDNLearnMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD10FCA2266C90CB00A84E66 /* EDNLearnMac.framework */; };
 		CDFEFDB8267876F0004BA307 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFEFDB7267876F0004BA307 /* HTTPClient.swift */; };
 		CDFEFDB9267876F0004BA307 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFEFDB7267876F0004BA307 /* HTTPClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		CD10FCAC266C90CC00A84E66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD10FC7D266C90A900A84E66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD10FCA1266C90CB00A84E66;
+			remoteInfo = EDNLearnMac;
+		};
+		CD69072A2685AA9E001E9E4D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CD10FC7D266C90A900A84E66 /* Project object */;
 			proxyType = 1;
@@ -67,6 +76,9 @@
 		CD4CC8F226787ADE0093103C /* FeedItemMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemMapper.swift; sourceTree = "<group>"; };
 		CD6906D626845771001E9E4D /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 		CD69071C2685A465001E9E4D /* EDNLearnMac.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = EDNLearnMac.xctestplan; sourceTree = "<group>"; };
+		CD6907242685AA9E001E9E4D /* EDNLearnAPIEndToEndTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EDNLearnAPIEndToEndTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD6907262685AA9E001E9E4D /* EDNLearnAPIEndToEndTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDNLearnAPIEndToEndTests.swift; sourceTree = "<group>"; };
+		CD6907282685AA9E001E9E4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDFEFDB7267876F0004BA307 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +105,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CD6907212685AA9E001E9E4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD6907292685AA9E001E9E4D /* EDNLearnMac.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -102,6 +122,7 @@
 				CD10FC87266C90AA00A84E66 /* EDNLearn */,
 				CD10FCA3266C90CB00A84E66 /* EDNLearnMac */,
 				CD10FCAE266C90CC00A84E66 /* EDNLearnMacTests */,
+				CD6907252685AA9E001E9E4D /* EDNLearnAPIEndToEndTests */,
 				CD10FC86266C90AA00A84E66 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +133,7 @@
 				CD10FC85266C90AA00A84E66 /* EDNLearn.app */,
 				CD10FCA2266C90CB00A84E66 /* EDNLearnMac.framework */,
 				CD10FCAA266C90CC00A84E66 /* EDNLearnMacTests.xctest */,
+				CD6907242685AA9E001E9E4D /* EDNLearnAPIEndToEndTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -198,6 +220,15 @@
 			path = "Unused iOS code";
 			sourceTree = "<group>";
 		};
+		CD6907252685AA9E001E9E4D /* EDNLearnAPIEndToEndTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD6907262685AA9E001E9E4D /* EDNLearnAPIEndToEndTests.swift */,
+				CD6907282685AA9E001E9E4D /* Info.plist */,
+			);
+			path = EDNLearnAPIEndToEndTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -266,6 +297,24 @@
 			productReference = CD10FCAA266C90CC00A84E66 /* EDNLearnMacTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		CD6907232685AA9E001E9E4D /* EDNLearnAPIEndToEndTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD69072E2685AA9E001E9E4D /* Build configuration list for PBXNativeTarget "EDNLearnAPIEndToEndTests" */;
+			buildPhases = (
+				CD6907202685AA9E001E9E4D /* Sources */,
+				CD6907212685AA9E001E9E4D /* Frameworks */,
+				CD6907222685AA9E001E9E4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD69072B2685AA9E001E9E4D /* PBXTargetDependency */,
+			);
+			name = EDNLearnAPIEndToEndTests;
+			productName = EDNLearnAPIEndToEndTests;
+			productReference = CD6907242685AA9E001E9E4D /* EDNLearnAPIEndToEndTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -283,6 +332,9 @@
 						LastSwiftMigration = 1240;
 					};
 					CD10FCA9266C90CC00A84E66 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					CD6907232685AA9E001E9E4D = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -303,6 +355,7 @@
 				CD10FC84266C90AA00A84E66 /* EDNLearn */,
 				CD10FCA1266C90CB00A84E66 /* EDNLearnMac */,
 				CD10FCA9266C90CC00A84E66 /* EDNLearnMacTests */,
+				CD6907232685AA9E001E9E4D /* EDNLearnAPIEndToEndTests */,
 			);
 		};
 /* End PBXProject section */
@@ -326,6 +379,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CD10FCA8266C90CC00A84E66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD6907222685AA9E001E9E4D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -395,6 +455,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CD6907202685AA9E001E9E4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD6907272685AA9E001E9E4D /* EDNLearnAPIEndToEndTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -402,6 +470,11 @@
 			isa = PBXTargetDependency;
 			target = CD10FCA1266C90CB00A84E66 /* EDNLearnMac */;
 			targetProxy = CD10FCAC266C90CC00A84E66 /* PBXContainerItemProxy */;
+		};
+		CD69072B2685AA9E001E9E4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD10FCA1266C90CB00A84E66 /* EDNLearnMac */;
+			targetProxy = CD69072A2685AA9E001E9E4D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -684,6 +757,46 @@
 			};
 			name = Release;
 		};
+		CD69072C2685AA9E001E9E4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NT7V746EDB;
+				INFOPLIST_FILE = EDNLearnAPIEndToEndTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = pm.EDNLearnAPIEndToEndTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CD69072D2685AA9E001E9E4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NT7V746EDB;
+				INFOPLIST_FILE = EDNLearnAPIEndToEndTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = pm.EDNLearnAPIEndToEndTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -719,6 +832,15 @@
 			buildConfigurations = (
 				CD10FCB7266C90CC00A84E66 /* Debug */,
 				CD10FCB8266C90CC00A84E66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD69072E2685AA9E001E9E4D /* Build configuration list for PBXNativeTarget "EDNLearnAPIEndToEndTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD69072C2685AA9E001E9E4D /* Debug */,
+				CD69072D2685AA9E001E9E4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
