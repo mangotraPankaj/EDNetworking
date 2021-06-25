@@ -1,0 +1,28 @@
+{
+  "configurations" : [
+    {
+      "id" : "F480E042-7E6C-4C0C-AF76-4612DFC06A60",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "skippedTests" : [
+        "EDNLearnMacTests"
+      ],
+      "target" : {
+        "containerPath" : "container:EDNLearn.xcodeproj",
+        "identifier" : "CD10FCA9266C90CC00A84E66",
+        "name" : "EDNLearnMacTests"
+      }
+    }
+  ],
+  "version" : 1
+}

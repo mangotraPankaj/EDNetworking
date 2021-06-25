@@ -66,6 +66,7 @@
 		CD1FF62026806A70008FCA6B /* XCTestCase+MemoryLeakTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracker.swift"; sourceTree = "<group>"; };
 		CD4CC8F226787ADE0093103C /* FeedItemMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemMapper.swift; sourceTree = "<group>"; };
 		CD6906D626845771001E9E4D /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
+		CD69071C2685A465001E9E4D /* EDNLearnMac.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = EDNLearnMac.xctestplan; sourceTree = "<group>"; };
 		CDFEFDB7267876F0004BA307 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -161,6 +162,7 @@
 				CD4CC8F226787ADE0093103C /* FeedItemMapper.swift */,
 				CDFEFDB7267876F0004BA307 /* HTTPClient.swift */,
 				CD6906D626845771001E9E4D /* URLSessionHTTPClient.swift */,
+				CD69071C2685A465001E9E4D /* EDNLearnMac.xctestplan */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
