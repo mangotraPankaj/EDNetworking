@@ -31,6 +31,7 @@
 		CD6906D826845771001E9E4D /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6906D626845771001E9E4D /* URLSessionHTTPClient.swift */; };
 		CD6907272685AA9E001E9E4D /* EDNLearnAPIEndToEndTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6907262685AA9E001E9E4D /* EDNLearnAPIEndToEndTests.swift */; };
 		CD6907292685AA9E001E9E4D /* EDNLearnMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD10FCA2266C90CB00A84E66 /* EDNLearnMac.framework */; };
+		CD6907372687675A001E9E4D /* XCTestCase+MemoryLeakTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1FF62026806A70008FCA6B /* XCTestCase+MemoryLeakTracker.swift */; };
 		CDFEFDB8267876F0004BA307 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFEFDB7267876F0004BA307 /* HTTPClient.swift */; };
 		CDFEFDB9267876F0004BA307 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFEFDB7267876F0004BA307 /* HTTPClient.swift */; };
 /* End PBXBuildFile section */
@@ -460,6 +461,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD6907272685AA9E001E9E4D /* EDNLearnAPIEndToEndTests.swift in Sources */,
+				CD6907372687675A001E9E4D /* XCTestCase+MemoryLeakTracker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
