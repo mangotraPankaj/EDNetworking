@@ -88,3 +88,6 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+EDNLearn/.DS_Store
+EDNLearn/EDNLearn.xcodeproj/xcshareddata/xcschemes/EDNLearn.xcscheme
+EDNLearn/EDNLearn.xcodeproj/xcshareddata/xcschemes/EDNLearnMac.xcscheme
